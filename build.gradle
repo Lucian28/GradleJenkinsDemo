@@ -17,3 +17,21 @@ dependencies {
 test {
     useJUnitPlatform()
 }
+
+task task1{
+    doFirst {
+        println 'This is task #1'
+    }
+}
+
+task task2(dependsOn: task1){
+    doFirst {
+        println 'This is task #2'
+    }
+}
+
+task task3(dependsOn: task2){
+    doFirst {
+        println 'This is task #3'
+    }
+}
