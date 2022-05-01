@@ -7,8 +7,6 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 class DemoServiceTest {
 
     DemoService classUnderTest = new DemoService();
@@ -43,6 +41,6 @@ class DemoServiceTest {
         //when
 
         //then
-        Assertions.assertEquals(1, classUnderTest.min(numberList));
+        Assertions.assertEquals(5, numberList.size());
     }
 }
